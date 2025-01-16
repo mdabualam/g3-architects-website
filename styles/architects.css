@@ -1,8 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 .work-sans-font {
-    font-family: "Work Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+
+/* dark 02 */
+.text-gray {
+  color: #424242;
+}
+/* dark 03 */
+.text-light-gray {
+  color: #727272;
+}
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* header styles */
+
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  color: rgb(19, 19, 19);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+}
+
+/* banner styles */
+.banner {
+  max-width: 820px;
+}
+.banner-title {
+  color: rgb(19, 19, 19);
+  font-family: Work Sans;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.banner-description {
+  color: rgb(114, 114, 114);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.btn-holder{
+    text-align: center;
+    margin-top: 32px;
+}
+.btn-explore {
+  width: 180px;
+  height: 64px;
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+}
+.banner-image, img{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar, .nav-link{
+        flex-direction: column;
+    }
+}
