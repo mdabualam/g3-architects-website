@@ -32,6 +32,9 @@
   border-radius: 8px;
   border: none;
 }
+.text-primary {
+  color: #ff900e;
+}
 
 /* header styles */
 
@@ -102,22 +105,86 @@ main {
   margin-left: 73px;
   max-width: 537px;
 }
-.feature-title {
+.section-title {
   font-size: 2.8rem;
   font-weight: 700;
-}
-.festures-color {
-  color: #ff900e;
+  margin-bottom: 24px;
 }
 .feature-description {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 32px;
 }
+
+/* features-enjoy styles*/
+.features-content {
+  display: flex;
+}
+
+.features-container {
+  max-width: 586px;
+}
+.section-description{
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: rgb(19, 19, 19);
+}
+.feature-info {
+  width: 514px;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+.exp-holder {
+  text-align: center;
+}
+.btn-exp {
+  width: 342px;
+  height: 200px;
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: none;
+  position: absolute;
+  margin-top: -170px;
+  margin-left: -92px;
+}
+.exp-10 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+}
+.exp-text {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.architect-image {
+  max-width: 708px;
+  height: 982px;
+  margin-left: 146px;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-links {
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* medium size devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
     flex-direction: column;
   }
 }
