@@ -171,8 +171,16 @@ main {
 }
 
 /* facts styles */
+.facts{
+  margin-top: 168px;
+}
 .facts-container {
   justify-content: space-around;
+  margin-top: 100px;
+}
+.facts-description{
+  width: 542px;
+  margin-top: 24px;
 }
 .fact-card {
   width: 245px;
